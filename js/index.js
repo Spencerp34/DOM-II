@@ -13,6 +13,14 @@ heading.addEventListener('mouseover', function(event) {
       }, 1500);
 }, false);
 
+document.addEventListener('keydown', function(event){
+    if (event.key === 'Escape') {
+        heading.style.height = ('50%')
+        setTimeout(function() {
+            heading.style.height = "";
+        }, 500);
+} false});
+
 const intro = document.querySelector('.intro');
 
 intro.addEventListener('mouseover', function(event) {
@@ -111,3 +119,28 @@ footerText.addEventListener('mouseover', function(event) {
         footerText.style.fontWeight = "";
       }, 1000);
 }, false);
+
+const entirePage = document.body
+const focusedContent = document.querySelector('.home');
+
+entirePage.addEventListener('click', function(event){
+        entirePage.style.backgroundColor = ('gray');
+    })
+
+//     if (event.key === 'Escape') {
+//         entirePage.style.backgroundColor =('gray');
+//     }
+// });
+
+focusedContent.addEventListener('click', function(event){
+    focusedContent.style.backgroundColor = ('pink');
+    event.stopImmediatePropagation();
+})
+    
+    // if (event.key === 'Escape') {
+    //     focusedContent.style.backgroundColor = ('pink');
+    //     event.stopImmediatePropagation();
+        
+    // }
+// });
+
