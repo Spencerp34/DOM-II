@@ -10,7 +10,7 @@ heading.addEventListener('mouseover', function(event) {
     heading.style.backgroundColor = ('red');
     setTimeout(function() {
         heading.style.backgroundColor = "";
-      }, 500);
+      }, 1500);
 }, false);
 
 const intro = document.querySelector('.intro');
@@ -85,4 +85,29 @@ Array.from(document.links).forEach(function (link) {
     link.addEventListener('click', function (event) {
         event.preventDefault(); // this stopped the hyperlink behavior.
     })
+    link.addEventListener('mouseover', function (event) {
+        link.style.fontWeight = ('bold')
+        setTimeout(function() {
+            link.style.fontWeight = "";
+          }, 1000);
+    }, false);
 })
+
+const footerText = document.querySelector('.footer p');
+
+footerText.addEventListener('mouseover', function(event) {
+    footerText.style.fontWeight = ('bold')
+    setTimeout(function() {
+        footerText.style.fontWeight = "";
+      }, 1000);
+}, false);
+
+const navBar = document.querySelectorAll('.nav-link')
+
+Array.from(document.links)
+footerText.addEventListener('mouseover', function(event) {
+    footerText.style.fontWeight = ('bold')
+    setTimeout(function() {
+        footerText.style.fontWeight = "";
+      }, 1000);
+}, false);
